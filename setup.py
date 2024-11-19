@@ -8,7 +8,7 @@ setup(
     install_requires=['argparse', 'setuptools'],  # Dependencies (if any)
     entry_points={
         'console_scripts': [
-            'substring_replace=substring_replace_script:main',  # Referance what to run
+            'substring-replace=substring_replace_script:main',
         ],
     },
     author="Busai Kornel",
