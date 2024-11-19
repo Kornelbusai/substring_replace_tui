@@ -7,8 +7,8 @@ setup(
     py_modules=["substring_replace"],  # Python files included
     install_requires=['argparse', 'setuptools'],  # Dependencies (if any)
     entry_points={
-        "console_scripts": [
-            "substring-replace=substring_replace:main",  # 'my-script' is the terminal command
+        'console_scripts': [
+            'substring_replace=substring_replace_script:main',  # Referance what to run
         ],
     },
     author="Busai Kornel",
