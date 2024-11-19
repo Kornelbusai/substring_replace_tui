@@ -1,4 +1,4 @@
-# Substring replacer for entire directory within term zsh
+# Substring replacer for entire directory within zsh (TUI)
 
 ## Description 
 
