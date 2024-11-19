@@ -14,7 +14,7 @@ setup(
     author="Busai Kornel",
     author_email="kornel.busai@gmail.com",
     description="Script that removes substring from all file names within a directory.",
-    url="https://github.com/yourusername/yourrepo",  # GitHub repository URL
+    url="https://github.com/Kornelbusai/substring_replace_tui",  # GitHub repository URL
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
