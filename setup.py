@@ -4,7 +4,7 @@ setup(
     name="substring_replacer",  # Name of your package
     version="1.0.0",
     packages=find_packages(),
-    py_modules=["substring_replace_script.py"],  # Python files included
+    py_modules=["substring_replace_script"],  # Python files included
     install_requires=['argparse', 'setuptools'],  # Dependencies (if any)
     entry_points={
         'console_scripts': [
