@@ -32,7 +32,7 @@ def print_warning(text_to_replace):
 
 
 
-if __name__ == "__main__":
+def main():
     ##Initate variables passed by users
     parser = argparse.ArgumentParser(
         description="Script that removes substring from all file names within a directory."
