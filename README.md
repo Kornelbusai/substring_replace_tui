@@ -1,4 +1,6 @@
-# Hello World Script
+# Substring replacer for entire directory within term zsh
+
+## Description 
 
 Script that removes substring from all file names within a directory.
 
