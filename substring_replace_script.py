@@ -4,9 +4,9 @@ import os
 import sys
 import argparse
 
-##Example how the path and text_to_replace would look
+##Example how the path and text_to_replace should look
 ##path = '/Users/name/Downloads/folder
-##text_to_replace = "text "
+##text_to_replace = "text"
 
 ##Preforme substring replacement
 def replace_substring_name(path,text_to_replace):
@@ -24,7 +24,7 @@ def replace_substring_name(path,text_to_replace):
 def print_warning(text_to_replace):
     print(f"\033[31mWARNING ALL FILES WITHIN THE DIRECTORY WILL RENAMED!\033[0m")
     print('\nExample of the changes going to be made (any file extention can be used .txt is only used as a example):')
-    print(f"\n\t Previous file name: \t {text_to_replace}file.txt")
+    print(f"\n\t Previous file name: \t \033[31m {text_to_replace}\033[0mfile.txt")
     print(f"\n\t New file name: \t file.txt")
     print("\nWould you like to still preforme the action (Y/N)?")
     check = str(input())
@@ -52,3 +52,4 @@ def main():
         print(f'\nAction Completed data was saved to the following directory: {path}')
     else:
         print("\nGoodbye")
+
