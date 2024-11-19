@@ -5,7 +5,7 @@ setup(
     version="1.0.0",
     packages=find_packages(),
     py_modules=["substring_replace"],  # Python files included
-    install_requires=['argparse','os', 'sys'],  # Dependencies (if any)
+    install_requires=['argparse','os', 'sys', 'setuptools'],  # Dependencies (if any)
     entry_points={
         "console_scripts": [
             "substring-replace=substring_replace:main",  # 'my-script' is the terminal command
