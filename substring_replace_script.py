@@ -38,7 +38,7 @@ def display_file_in_directory(path):
     print('\n The following files will be mutated:')
     for file in directory:
         print(f'\n{file}')
-    print('Continue with filename change (Y/N)?')
+    print('\nContinue with filename change (Y/N)?')
     check = input().lower()
     if (check.__eq__('y')):
         return True
@@ -67,7 +67,7 @@ def main():
     ##Checking if warning was accepted
     if(check_aggrement == True and check_selected_files == True):
         replace_substring_name(path,text_to_replace)
-        print(f'\nAction Completed data was saved to the following directory: {path}')
+        print(f'\nAction Completed: Data was saved to the following directory: {path}')
     else:
         print("\nGoodbye")
 
