@@ -28,12 +28,27 @@ def print_warning(text_to_replace):
     print(f"\n\t New file name: \t file.txt")
     print("\nWould you like to still preforme the action (Y/N)?")
     check = str(input())
-    return check
+    if (check.__eq__('y')):
+        return True
+    else:
+        return False
 
+def display_file_in_directory(path):
+    directory = os.listdir(path)
+    print('\n The following files will be mutated:')
+    for file in directory:
+        print(f'\n{file}')
+    print('Continue with filename change (Y/N)?')
+    check = input().lower()
+    if (check.__eq__('y')):
+        return True
+    else:
+        return False
 
 
 def main():
     ##Initate variables passed by users
+    os.system('cls||clear')
     parser = argparse.ArgumentParser(
         description="Script that removes substring from all file names within a directory."
     )
@@ -44,10 +59,13 @@ def main():
     text_to_replace = args.substring
 
     ##Display warning message
-    check = print_warning(text_to_replace)
+    check_aggrement = print_warning(text_to_replace)
+
+    ##Display files to be mutated
+    check_selected_files = display_file_in_directory(path)
 
     ##Checking if warning was accepted
-    if(check.lower().__eq__('y')):
+    if(check_aggrement == True and check_selected_files == True):
         replace_substring_name(path,text_to_replace)
         print(f'\nAction Completed data was saved to the following directory: {path}')
     else:
