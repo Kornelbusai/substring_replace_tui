@@ -61,13 +61,17 @@ def main():
     ##Display warning message
     check_aggrement = print_warning(text_to_replace)
 
-    ##Display files to be mutated
-    check_selected_files = display_file_in_directory(path)
-
     ##Checking if warning was accepted
     if(check_aggrement == True and check_selected_files == True):
-        replace_substring_name(path,text_to_replace)
-        print(f'\nAction Completed: Data was saved to the following directory: {path}')
+
+        ##Display files to be mutated
+        check_selected_files = display_file_in_directory(path)
+
+        if (check_selected_files == True):
+            replace_substring_name(path,text_to_replace)
+            print(f'\nAction Completed: Data was saved to the following directory: {path}')
+        else:
+            print("\nGoodbye for now")
     else:
-        print("\nGoodbye")
+        print("\nGoodbye for now")
 
