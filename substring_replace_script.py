@@ -35,7 +35,7 @@ def print_warning(text_to_replace):
 
 def display_file_in_directory(path):
     directory = os.listdir(path)
-    print('\n The following files will be mutated:')
+    print('\nThe following files will be mutated:')
     for file in directory:
         print(f'\n{file}')
     print('\nContinue with filename change (Y/N)?')
